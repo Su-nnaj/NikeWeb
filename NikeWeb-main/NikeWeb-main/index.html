@@ -1,0 +1,273 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./tailwind.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@200;400;600;700&family=Berkshire+Swash&family=Croissant+One&family=Dancing+Script:wght@400;500;600;700&family=Michroma&family=Mooli&family=Open+Sans:wght@300&family=Passion+One:wght@400;900&family=Poppins:wght@700;800;900&family=Roboto:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="font-[Poppins] bg-white h-screen">
+    <header class=" bg-white md:fixed md:w-full md:z-10">
+        <nav class="flex justify-between items-center w-[92%]  mx-auto">
+            <div>
+                <img class="w-16 cursor-pointer" src="./nike-4-logo-png-transparent.png" alt="...">
+            </div>
+            <div
+                class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5 ml-0 md:ml-32 ">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>    
+                        <a class="hover:text-gray-500" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="./men.html">Men</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="./woman.html">Women</a>
+                    </li>
+                     <li>
+                        <a class="hover:text-gray-500" href="./kids.html">kids</a>
+                    </li>
+                 
+            </div>
+           
+              
+              
+            <div class="flex items-center gap-6">
+                <div class="relative " >
+                    <input
+                      type="text"
+                      class="bg-gray-100 rounded-full pl-10 pr-4 py-2 focus:outline-none focus:shadow-outline w-52  hidden md:block"
+                      placeholder="Search..."
+                    />
+                    <div class="absolute inset-y-0 left-0  pl-3  flex items-center pointer-events-none">
+                      <ion-icon
+                        name="search-outline"
+                        class="text-gray-900 w-6 h-6 pr-20  md:w-5 md:h-5 "
+                      ></ion-icon>
+                    </div>
+                  </div>
+                  <ion-icon name="heart-outline" class="w-6 h-6  pl-10"></ion-icon>
+                  <ion-icon 
+                  name="cart-outline"
+                  class="w-6 h-6 ">
+                </ion-icon>
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+    </header>
+
+ <div>
+    <div class="p-5 md:p-12">
+        <img src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_1253,c_limit/74eb3fc7-3e79-45c7-aa20-75d72198b3cd/nike-just-do-it.png" alt="" class="w-full">
+    </div>
+    <div class="text-center">
+    <h1 class="text-5xl md:text-8xl md:py-0 py-10" style="font-family: 'Passion One', cursive; ">READY, SET, SHOP</h1>
+    <p > From 28 Sep - 01 Oct, enjoy an extra 30% off sale items when you purchase 2 items or more. <br> Use code: SALE30. Shop NowPromo Terms</p>
+    <div class="py-5">  
+    <button class="bg-black text-white px-5 py-2 rounded-full hover:bg-[#696c70] duration-500" >Shop Now</button>
+    <button class="bg-black text-white px-5 py-2 rounded-full hover:bg-[#696c70] duration-500">Promo Terms</button>
+    </div>
+</div>
+</div>
+
+<div class=" px-5 sm:px-12 md:px-12" style="font-family: 'Passion One', cursive; ">
+    <h1 class="text-3xl py-5">Just In</h1>
+    <div class="grid grid-cols-1 gap-2 mx-auto md:grid-cols-2 gap-4">
+        <div class="relative">
+            <img src="https://i.pinimg.com/564x/87/42/a4/8742a450ab64dca7d9da2cda3f95ea9a.jpg" class="w-full">
+            <div class="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-60 text-white">
+                <h2 class="text-white">Available on the Nike App From: 19 Nov</h2>
+                <button class="bg-[#87acec] text-black px-5 py-2 rounded-full hover:bg-white hover:text-black duration-500">Get It First</button>
+            </div>
+        </div>
+        <div class="relative">
+            <img src="https://i.pinimg.com/564x/63/b1/f4/63b1f4a733d6ac2ae9de88dcb7556a8f.jpg" class="w-full">
+            <div class="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-60 text-white">
+                <h2 class="text-white">Available on the Nike App From: 19 Nov</h2>
+                <button class="bg-[#87acec] text-black px-5 py-2 rounded-full hover:bg-white hover:text-black duration-500">Get It First</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class=" md:py-0 " style="font-family: 'Passion One', cursive; ">
+    <div class=" p-10  md:px-12">
+        <h1 class="text-center text-5xl py-10">Featured</h1>
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/169562109620915.60415e365681a.png" class="w-full">
+        <div class="md:relative md:bottom-28 md:left-5 p-4 text-white">
+            <h2 class="text-white text-2xl">Available on the Nike App From: 19 Nov</h2>
+            <button class="bg-[#87acec] text-black px-5 py-2 rounded hover:bg-white hover:text-black duration-500">Get It First</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="bg-white"  style="font-family: 'Passion One', cursive; ">
+    <div class="px-5 sm:px-12 md:px-12">
+      <h1 class="pb-5 text-[2em]">New Arrival</h1>
+  
+      <div class="grid grid-cols-1 gap-x-2 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8">
+        <a href="#" class="group">
+          <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+            <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/70a030c9-ee99-4b4f-a42b-4a1f5a4896e9/lebron-xxi-akoya-basketball-shoes-H8l9Zr.png"  class="h-full w-full object-cover object-center group-hover:opacity-75 duration-500">
+          </div>
+          <h3 class="mt-4 text-sm text-orange-700">Just In</h3>
+          <h4>LeBron XXI 'Akoya'</h4>
+          <p class="mt-1 text-lg font-medium text-gray-900">$200</p>
+        </a>
+        <a href="#" class="group">
+          <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+            <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a90ad815-f355-4d52-af93-e1def52b26c1/ispa-jacket-bnbM9W.png" class="h-full w-full object-cover object-center group-hover:opacity-75">
+          </div>
+          <h3 class="mt-4 text-sm text-orange-700">Best Seller</h3>
+          <h4>Nike ISPA</h4>
+          <p class="mt-1 text-lg font-medium text-gray-900">$350</p>
+        </a>
+        <a href="#" class="group">
+          <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+            <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1d969238-eb25-4b99-a651-eea0df06deb6/kd16-basketball-shoes-H3gcDG.png"  class="h-full w-full object-cover object-center group-hover:opacity-75">
+          </div>
+          <h3 class="mt-4 text-sm text-orange-700">Just in</h3>
+          <h4>KD16</h4>
+          <p class="mt-1 text-lg font-medium text-gray-900">$150</p>
+        </a>
+        </div>
+    </div>
+</div>
+
+<div class="bg-white"  >
+    <h1 class="py-20 text-[2em] px-5 sm:px-12 md:px-28">Nike Membership</h1>
+    <div class="px-5 sm:px-12 md:px-28 text-center">
+      
+      <h1 class="text-8xl" style="font-family: 'Passion One', cursive; ">BECOME A <br> MEMBER</h1>
+      <P class="text-[20px] py-10">Sign up for free. Join the community</P>
+      <button class="bg-black text-white px-5 py-2 rounded-full hover:bg-white hover:text-black duration-500">Join Us</button>
+      <h1 class="text-3xl py-10" >Featured Benifits</h1>
+       </div>
+       <div class="px-5 sm:px-12 md:px-12 pb-36">
+       <div class="grid grid-cols-1 gap-2 mx-auto md:grid-cols-3 gap-4">
+        <div class="relative" >
+            <img src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_411,c_limit/6a646dd4-24e4-4d14-847f-84c9f8311635/nike-just-do-it.jpg" width="600px">
+            <div class="absolute bottom-0 left-0 right-0 p-4  text-white">
+                <h3 class="text-black">Member Shop</h3>
+                <h2 class="text-black text-2xl">Shop Member-exclusive <br> styles.</h2>
+               
+            </div>
+        </div>
+        <div class="relative">
+            <img src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_411,c_limit/f739a452-a66e-46de-a6c5-d0e6bca3ca09/nike-just-do-it.jpg" width="600px">
+            <div class="absolute bottom-0 left-0 right-0 p-4  text-white">
+                <h3 class="text-black">Shipping as it Should Be</h3>
+                <h2 class="text-black text-2xl">Free shipping on orders <br> $50+</h2>
+               
+            </div>
+        </div>
+        <div class="relative">
+            <img src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_411,c_limit/f739a452-a66e-46de-a6c5-d0e6bca3ca09/nike-just-do-it.jpg" width="600px">
+            <div class="absolute bottom-0 left-0 right-0 p-4  text-white">
+                <h3 class="text-black">Nike By You</h3>
+                <h2 class="text-black text-2xl">Customize your so-you shoe.</h2>
+                
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <footer class="bg-black text-white py-10">
+        <div class="container mx-auto px-4 md:px-8 lg:px-16">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="col-span-1">
+                    <h3 class="text-lg font-semibold mb-4">Shop Nike</h3>
+                    <ul class="space-y-2">
+                        <li><a href="./men.html" class="hover:text-gray-400">Men</a></li>
+                        <li><a href="./woman.html" class="hover:text-gray-400">Women</a></li>
+                        <li><a href="./kids.html" class="hover:text-gray-400">Kids</a></li>
+                        <!-- Add more links as needed -->
+                    </ul>
+                </div>
+                <div class="col-span-1">
+                    <h3 class="text-lg font-semibold mb-4">Help</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-gray-400">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-gray-400">Order Status</a></li>
+                        <li><a href="#" class="hover:text-gray-400">Shipping</a></li>
+                        <!-- Add more links as needed -->
+                    </ul>
+                </div>
+                <div class="col-span-1">
+                    <h3 class="text-lg font-semibold mb-4">About Nike</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-gray-400">News</a></li>
+                        <li><a href="#" class="hover:text-gray-400">Careers</a></li>
+                        <li><a href="#" class="hover:text-gray-400">Investors</a></li>
+                        <!-- Add more links as needed -->
+                    </ul>
+                </div>
+                <div class="col-span-1">
+                    <h3 class="text-lg font-semibold mb-4">Follow Nike</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-gray-400">Facebook</a></li>
+                        <li><a href="#" class="hover:text-gray-400">Twitter</a></li>
+                        <li><a href="#" class="hover:text-gray-400">Instagram</a></li>
+                        <!-- Add more links as needed -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+  <script>
+    function menu(e){
+      let list = document.querySelector('ul');
+
+      e.name === 'menu' ? (e.name = "close", 
+      list.classList.add('top-[80px]'), 
+      list.classList.add('opacity-100'),
+      list.classList.add('duration-900')): 
+      (e.name = "menu", 
+      list.classList.remove ('top-[80px]'), 
+      list.classList.remove('opacity-100'),
+      list.classList.remove('duration-900'))
+    }
+  </script>
+   
+</body>
+</html>
